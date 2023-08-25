@@ -1,17 +1,17 @@
 # Computational_Geometry
 1. Huffman Code and Shannon's First Theorem.
-Through the implementation of the Huffman coding algorithm in Python and its corresponding decoding algorithm, we have been able to verify that this algorithm is an optimal data compression system. It reduces the lengths of bits by approximately half compared to other encodings, such as the usual binary encoding. This is a direct consequence of Shannon's First Theorem, which relates these lengths (specifically, the weighted average of all of them) with entropy, which can be interpreted as the number of independent variables in a system S, used to construct the parts of that system P(S).
+  Through the implementation of the Huffman coding algorithm in Python and its corresponding decoding algorithm, we have been able to       verify that this algorithm is an optimal data compression system. It reduces the lengths of bits by approximately half compared to        other encodings, such as the usual binary encoding. This is a direct consequence of Shannon's First Theorem, which relates these         lengths (specifically, the weighted average of all of them) with entropy, which can be interpreted as the number of independent            variables in a system S, used to construct the parts of that system P(S).
 
-2. Voronoi Diagram and Clustering (particularly interesting).
+3. Voronoi Diagram and Clustering (particularly interesting).
 The process of grouping or clustering a system involves grouping objects based on similarity into sets or clusters, where members of the same group share similar characteristics. The appropriate algorithm for such clustering depends on the dataset being analyzed and the intended use of the results.
 The concept of grouping similar data is incomplete and subjective, leading to the existence of numerous algorithms. Some well-known models are based on connectivity, centroids, distribution, density, etc. In this practice, we will study two algorithms: one based on centroid-based clustering (KMeans) and another based on density-based clustering (DBSCAN).
 The main characteristic of the KMeans algorithm is that it classifies data into clusters of approximately similar size (with a similar number of elements) because it always assigns each element to the nearest centroid based on the corresponding metric. This often results in incorrect cuts at the edges of clusters since the algorithm optimizes centroids, not boundaries. In this case, clusters are known as Voronoi diagrams.
 On the other hand, the main characteristic of DBSCAN is that clusters are defined as areas of higher density compared to the rest of the dataset. Objects in sparse areas are known as noise or boundary points. This algorithm doesn't provide good clustering in a system that doesn't have density drops in its elements, meaning a system with similar density across all its regions.
 
-3. Discretization of Continuous Dynamic Systems and Liouville's Theorem.
+4. Discretization of Continuous Dynamic Systems and Liouville's Theorem.
 Discretizing the dynamic system of a nonlinear oscillator allows us to calculate the area of the phase diagram of that system. The algorithm used to calculate the convex hull of the phase diagram verifies Liouville's Theorem, which states that the area of the phase diagram remains invariant over time (as observed in the animation 'p3.gif' generated using Python).
 
-4. Affine Isometric Transformation.
+5. Affine Isometric Transformation.
 An affine isometric transformation is a type of geometric application that preserves the shape and size of objects while moving them in space. Different affine isometric transformations can be generalized as the composition of a rotation with a translation.
 In an affine isometric transformation, distances between points of the object and angles between its lines are preserved. Furthermore, affine isometric transformations are linear, meaning they can be represented using matrices and vectors.
 Using Python, I have generated animations 'p4i.gif' and 'p4ii.gif' where you can visually confirm that affine isometric transformations keep the shape and size of objects invariant.
